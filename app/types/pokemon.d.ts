@@ -14,9 +14,15 @@ interface PokemonSprites {
   };
 }
 
+interface PokemonCries {
+  latest?: string;
+  legacy?: string;
+}
+
 interface PokemonDetail {
   id: number;
   name: string;
   types: PokemonType[];
   sprites: PokemonSprites;
+  cries: PokemonCries;
 }
