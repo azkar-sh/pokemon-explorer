@@ -9,6 +9,7 @@ import { searchPokemonByName } from "@/lib/pokemon-service";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { AlertCircle } from "lucide-react";
 import Navbar from "@/components/navbar";
+import Hero from "@/components/hero";
 
 export default function Home() {
   const [page, setPage] = useState(1);
@@ -63,8 +64,11 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
-      <main className="min-h-screen p-4 md:p-8 bg-gradient-to-br from-red-50 to-blue-50">
+      <Hero />
+      <main
+        className="min-h-screen p-4 md:p-8 bg-gradient-to-br from-red-50 to-blue-50"
+        id="pokemon-explorer"
+      >
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 text-gray-800">
             Pokémon Explorer
